@@ -176,11 +176,26 @@
 				oP1.innerHTML=document.querySelector('.recommendation').value;	
 				print($('#down_button'));
 			}
-
+			$('#share_button').on( 'click' , function()
+    		{	if (typeof WeixinJSBridge == "undefined") { 
+				 alert('1'); 
+				 } else{
+				 WeixinJSBridge.invoke('shareTimeline', { 
+				 "title": "36氪", 
+				 "link": "canvas.toDataURL()", 
+				 "desc": "关注互联网创业", 
+				 "img_url": "canvas.toDataURL()" 
+				 alert('2');
+				 }); 
+				 }
+				 
+    			//post('/?a=share',{'data':canvas.toDataURL()});
+    		} );
 	
 		}
 	
 
 	</script>
+	<script type="text/javascript">
 	</body>
 </html>
