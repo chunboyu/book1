@@ -110,11 +110,6 @@ function print(link)
 
     		$('#share_button').css('display','inline-block');
     		
-    		// service.weibo.com/share/share.php?title=偷偷告诉你，只要是北京互联网公司的HR，都可以免费去竞鹿 @jobdeer 领抱枕哦！不用抽奖，1000个抱枕先到先得，你也赶紧去领吧！&url=http%3A%2F%2Fwww.jobdeer.com%2Factivity.html&source=bookmark&pic=http://www.jobdeer.com/img/activity_weibo.png
-    		/*
-    		$('#share_button').attr( 'href' , 'http://service.weibo.com/share/share.php?title='+ encodeURIComponent('来看看我设计的JobDeer') + '&url=' + encodeURIComponent('http://deerface.sinaapp.com') + '&pic=' + encodeURIComponent(canvas.toDataURL()) ) ;
-    		$('#share_button').css('display','inline-block');
-			*/
   		}
   	});
 }
