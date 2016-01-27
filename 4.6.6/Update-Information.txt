@@ -1,0 +1,599 @@
+------------------------------------------------------------------------
+### INOVADO UPDATE INFORMATIONS
+------------------------------------------------------------------------
+# Info: You can ignore this, when you do a new Installation.
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+### UPDATE TO VERSION 4.6.6
+------------------------------------------------------------------------
+# IMPORTANT NOTES
+------------------------------------------------------------------------
+
+1. Save your translation files before overriding with the User Translations
+
+2. Due to unforseen circumstances, Envato have asked us to remove the current Sidebar Plugin that is currently in place. If you update from < 4.4 it may happen, that you have to create your custom sidebars again and assign them with the new given shortcode to the appropriate pages.
+
+3. Also, we had to change the video shortcode syntax from [video] to [embedvideo] if you embedded any videos with the [video] shortcode make sure to change them it to [embedvideo]
+
+4. For all Customizers: If you are using a custom background color / image for the body part you now have to apply it to the #wrapall class
+
+5. [IMPORTANT]: For all users using an older version of the Revolution Slider than 4.2 please update to the latest version. You can find it in the "Extras" folder. There was an important security fix.
+
+------------------------------------------------------------------------
+# UPDATE STEPS
+------------------------------------------------------------------------
+
+1) Just copy & paste the new "inovado" Folder from the Themes folder you've downloaded on Themeforest in wp-content/themes/ and completely overwrite the old "inovado" folder.
+
+2) To update the Revolution Slider Plugin, unzip revslider.zip in inovado/framework/plugins/ and copy the folder to your WordPress Installation in wp-content/plugins/ and overwrite the old revslider folder.
+
+3) To update the CF-Post-Formats Plugin, unzip the cf-post-formats.zip  in inovado/framework/plugins/ and copy the folder to your WordPress Installation in wp-content/plugins/ and overwrite the old cf-post-formats folder.
+
+3) Login to your WordPress Backend
+
+4) Go to Appearance > Theme Options and hit "Save All Changes", (maybe you have to reload this site after that, if it gives you an error) just to be sure everything gets in the Database and looks good.
+
+------------------------------------------------------------------------
+### UPDATE FROM VERSION < 2.0
+------------------------------------------------------------------------
+
+Info: After the Update you need to set your Twitter Settings in Appearance > Theme Options > Social Media or deactivate the Twitter Bar in Appearance > Theme Options > Footer if you don't want to use the Twitter Bar.
+
+If you don't like the minor style changes made in 3.0, just replace the style.css & framework/inc/enqueue.php with your old files.
+
+------------------------------------------------------------------------
+### UPDATES
+------------------------------------------------------------------------
+# Version 4.6.6 - June 19th 2015
+------------------------------------------------------------------------
+- Added: New Revolution Slider Version
+- Update: prettyPhoto to the latest version (security fix)
+
+=== Changelog ===
+- /framework/js/prettyPhoto.js
+- style.css (Version Number)
+------------------------------------------------------------------------
+# Version 4.6.5 - April 24th 2015
+------------------------------------------------------------------------
+- Added: New Revolution Slider Version
+- Fix: TGM Plugin Activator Security
+- Fix: WooCommerce Notice
+
+=== Changelog ===
+- framework/inc/plugin-activation.php
+- functions.php
+- style.css (Version Number)
+
+------------------------------------------------------------------------
+# Version 4.6.4 - Februray 13th 2015
+------------------------------------------------------------------------
+- Added: New Revolution Slider Version
+- Added: New FontAwesome Icons
+- Added: New Plugin Activation
+- Fix: WooCommerce Version 2.3 fixes
+
+=== Changelog ===
+- framework/css/font/fontawesome-webfont.eot
+- framework/css/font/fontawesome-webfont.svg
+- framework/css/font/fontawesome-webfont.ttf
+- framework/css/font/fontawesome-webfont.woff
+- framework/css/font/FontAwesome.otf
+- framework/css/shortcodes.css
+- framework/css/woocommerce.css
+- framework/inc/plugin-activation.php
+- framework/functions.php
+- style.css (Version Number)
+
+------------------------------------------------------------------------
+# Version 4.6.3 - November 28th 2014
+------------------------------------------------------------------------
+- Added: New Revolution Slider Version
+- Fix: WooCommerce Lists in Product Descriptions
+- Fix: Translatable Breadcrumbs
+
+=== Changelog ===
+- framework/css/woocommerce.css
+- framework/inc/breadcrumbs.php
+- style.css (Version Number)
+
+------------------------------------------------------------------------
+# Version 4.6.2 - September 4th 2014
+------------------------------------------------------------------------
+- Latest Version of Revolution Slider
+
+=== Changelog ===
+- style.css (Version Number)
+
+------------------------------------------------------------------------
+# Version 4.6.1 - September 1st 2014
+------------------------------------------------------------------------
+- Added: New Revolution Slider Version
+- Added: Megamenu with 2 columns
+- Fix: Blank Page Template closing tags
+
+=== Changelog ===
+- page-blank.php
+- framework/css/headers.css
+- style.css (Version Number)
+
+------------------------------------------------------------------------
+# Version 4.6 - July 7th 2014
+------------------------------------------------------------------------
+- Speed Improvement: Reduced HTTP Requests & CSS Optimization
+- Added: Footer fills now the rest of the page with color
+- Added: CSS Design improvements
+- Added: Excerpt Option for Portfolio Items
+- Added: hoverIntent jQuery Plugin for enhanced usability on Main Subnavigation
+- Added: French Translation by user maxime
+- Added: Spanish Translation by user josé
+- Added: Brazil Translation by user rodrigo
+- Fixed: Twitter hashtag links
+- Fixed: WooCommerce CSS fix for WooCommerce > 2.1
+- Fixed: Portfolio glitch with WPML Plugin
+- Added: New Revolution Slider Version + Documentation
+
+=== Changelog ===
+- footer.php
+- framework/css/responsive.css
+- framework/css/retina.css
+- framework/css/shortcodes.css
+- framework/inc/cpt-portfolio.php
+- framework/inc/customcss.php
+- framework/inc/customjs.php
+- framework/inc/enqueue.php
+- framework/inc/post-format/content-link.php
+- framework/js/superfish.js
+- framework/js/twitter/jquery.tweet.js
+- framework/languages/es_ES.po
+- framework/languages/es_ES.mo
+- framework/languages/fr_FR.po
+- framework/languages/fr_FR.mo
+- framework/languages/pt_BR.po
+- framework/languages/pt_BR.mo
+- functions.php
+- header.php
+- page-portfolio-col1.php
+- page-portfolio-col2.php
+- page-portfolio-col3.php
+- page-portfolio-col4.php
+- style.css
+
+removed: basic.css (added to style.css)
+removed: bootstrap.css (added to style.css)
+removed: skeleton.css (added to responsive.css)
+
+=== Important Note ===
+1. Save your translation files before overriding with the User Translations
+2. If you are using a custom background color for the body part you now have to apply it to the #wrapall class
+
+------------------------------------------------------------------------
+# Version 4.5.3 - June 10th 2014
+------------------------------------------------------------------------
+- Added: New Revolution Slider Version
+- Fixed: XING Icon in Footer
+
+=== Changelog ===
+footer.php
+style.css
+
+------------------------------------------------------------------------
+# Version 4.5.2 - April 25th 2014
+------------------------------------------------------------------------
+- Added: New Revolution Slider Version
+- Added: WooCommerce 2.1 Styling in Firefox 
+- Fixed: Shortcode Generator with TinyMCE 4.0
+
+=== Changelog ===
+framework/css/woocommerce.css
+framework/inc/shortcodes.php
+framework/inc/tinymce/tinymce.js
+style.css
+
+=== Important Note ===
+We had to change the video shortcode syntax from [video] to [embedvideo] if you embedded any videos with the [video] shortcode make sure to change them it to [embedvideo]
+
+------------------------------------------------------------------------
+# Version 4.5.1 - March 31th 2014
+------------------------------------------------------------------------
+- Added: New Revolution Slider Version
+- Fixed: Sidebar Widgets Headline Styling
+- Fixed: Side-Navigation Template Notice
+
+=== Changelog ===
+functions.php
+page-side-navigation.php
+sidebar.php
+style.css
+framework/plugins/smk-sidebar-generator.zip
+
+------------------------------------------------------------------------
+# Version 4.5 - March 26th 2014
+------------------------------------------------------------------------
+- Removed '84undefined index notices when installing
+- Fixed: Version Number
+- Fixed: WooCommerce CSS
+
+------------------------------------------------------------------------
+# Version 4.4 - March 25th 2014
+------------------------------------------------------------------------
+- New Sidebar Generator
+- Fixed WooCommerce Product Styling
+- Works with Woo 2.1
+
+------------------------------------------------------------------------
+# Version 4.3 - February 26th 2014
+------------------------------------------------------------------------
+- New: Home Page Version Page
+- New: Home Page Shop Landing Page
+- New: Home Page Video Section Page
+- New: Sidenav now allows Submenu Items with correct highlighting
+- New: Google Share Link in Sharebox
+- Improved: Better SEO for Blog Posts
+- Fixed: Titlebar in Blog Posts
+
+=== Changelog ===
+framework/inc/customcss.php
+framework/inc/post-format/single-audio.php
+framework/inc/post-format/single-gallery.php
+framework/inc/post-format/single-link.php
+framework/inc/post-format/single-quote.php
+framework/inc/post-format/single-video.php
+framework/inc/post-format/single.php
+framework/inc/sharebox.php
+single.php
+style.css
+
+------------------------------------------------------------------------
+# Version 4.2.2 - January 26th 2014
+------------------------------------------------------------------------
+- New: Revolution Slider Version
+- Fix: XING Social Button Fix
+
+=== Changelog ===
+header.php
+style.css
+
+------------------------------------------------------------------------
+# Version 4.2 Megamenu - December 23th 2013
+------------------------------------------------------------------------
+- New: New Header with Megamenu
+- New: Header Theme Options
+- New: Video Section Shortcode
+- Update: Tooltip z-index
+- Update: Superfish DropDown Plugin
+
+=== Changelog ===
+admin/functions/functions.options.php
+framework/css/bootstrap.css
+framework/css/headers.css
+framework/css/responsive.css
+framework/css/shortcodes.css
+framework/inc/customcss.php
+framework/inc/customjs.php
+framework/inc/shortcodes.php
+framework/js/shortcodes.js
+framework/js/superfish.js
+header.php
+style.css
+
+=== New Files ===
+framework/images/headers/header6.jpg
+framework/inc/headers/header-v6.php
+
+------------------------------------------------------------------------
+# Version 4.1 "New Admin Ui" - December 13th 2013
+------------------------------------------------------------------------
+- New: Updated Admin Panel to fit the new WordPress UI
+- Fixed: Dropdown Menu Delay
+
+=== Changelog ===
+admin/assets/css/admin-style.css
+admin/assets/js/smof.js
+admin/classes/class.options_machine.php
+framework/inc/cpt-portfolio.php
+framework/js/superfish.js
+
+------------------------------------------------------------------------
+# Version 4.0 "WooCommerce Ready" - November 11th 2013
+------------------------------------------------------------------------
+- New: WooCommerce Support - Fully Responsive & Completely Styled
+- New: Shop Icon in Header
+- New: New Theme Options
+- New: Blank Page Template
+- Fix: Header V4 Navigation Color
+- Fix: Comments Headline
+- Fix: Comments Author Website
+
+=== Changelog ===
+admin/assets/css/admin-style.css
+admin/functions/functions.options.php
+comments.php
+framework/css/responsive.css
+framework/css/retina.css
+framework/css/shortcodes.css
+framework/inc/customcss.php
+framework/inc/enqueue.php
+framework/inc/headers/header-v1.php
+framework/inc/headers/header-v2.php
+framework/inc/headers/header-v3.php
+framework/inc/headers/header-v4.php
+framework/js/bootstrap.js
+framework/js/superfish.js
+framework/functions.php
+sidebar.php
+style.css
+woocommerce.php
+
+=== New Files ===
+admin/assets/images/icon-woocommerce.png
+framework/css/woocommerce.css
+framework/images/cart.png
+framework/images/cart@2x.png
+framework/images/search.png
+framework/images/search@2x.png
+page-blank.php
+
+------------------------------------------------------------------------
+# Version 3.2 - October 21st 2013
+------------------------------------------------------------------------
+- Update: New Revolution Slider Plugin
+- New: Pricing Tables without Signup Button possible
+- New: Vertical Tab Shortcode
+- New: Nested Shortcodes in Tabs possible
+
+=== Changelog ===
+framework/inc/shortcodes.php
+framework/css/responsive.css
+framework/css/shortcodes.css
+framework/plugins/revslider.zip
+style.css (Version number only)
+
+------------------------------------------------------------------------
+# Version 3.0.1 - August 18th 2013
+------------------------------------------------------------------------
+- Updated Sample Data
+
+------------------------------------------------------------------------
+# Version 3.0 - August 1st 2013
+------------------------------------------------------------------------
+- New: New Page Template 100% Full Width Sections
+- New: 3 new Home Pages
+- New: 3 new Pre-Configured Pages
+- New: New Headline Style Options
+- New: Optimized all Style Options
+- New: Better User Experience & Readibility
+- New: All Fontawesome Icons (361 Icons)
+- New: Section Shortcode
+- New: Fast Sticky Header 
+- New: Improved CSS Loading Time
+- New: Improved Google Fonts Loading Time
+- New: Improved all Pre-Configured Pages
+- New: Added Inovado V3 Theme Options Sample Data
+- New: Improved Revolution Slider Styles
+- Fixed: Header-V4 Background
+- Fixed: Twitter CSS
+- Fixed: Twitter Retina Icon
+
+=== Changelog ===
+admin/functions/functions.options.php
+framework/css/headers.css
+framework/css/retina.css
+framework/css/shortcodes.css
+framework/inc/customcss.php
+framework/inc/enqueue.php
+framework/inc/googlefonts.php
+framework/inc/shortcodes.php
+framework/inc/tinymce/tinymce.js
+framework/js/waypoints.js
+functions.php
+header.php
+page-portfolio-col1.php
+style.css
+
+=== New Files ===
+framework/css/font/
+framework/inc/tinymce/section.png
+page-section.php
+
+------------------------------------------------------------------------
+# Version 2.2 - July 21th 2013
+------------------------------------------------------------------------
+- Fixed:  Speed Up by Adding Inline styles with WordPress Function wp_add_inline_style
+- Update: New Revolution Slider Plugin
+
+------------------------------------------------------------------------
+# Version 2.1.1 - June 28th 2013
+------------------------------------------------------------------------
+- Fixed: Twitterbar with usage of Custom URLS
+
+------------------------------------------------------------------------
+# Version 2.1 - June 18th 2013
+------------------------------------------------------------------------
+- Fixed: Uses new Twitter API 1.1 - please reconfigure your Settings for Twitter in Theme Options > Social Media & install the new Plugin
+
+------------------------------------------------------------------------
+# Version 2.01 - June 8th 2013
+------------------------------------------------------------------------
+- Added: New Revolution Slider Version
+
+------------------------------------------------------------------------
+# Version 2.0 - March 16th 2013
+------------------------------------------------------------------------
+- Added: 4 New Header Styles to choose
+- Added: Every Header can be "sticky"
+- Added: New Premium FlexSlider Plugin
+- Added: New Revolution Slider Plugin
+- Added: 10+ new predefined Layouts & Homepage Layouts
+- Added: 240+ Retina Ready Icons
+- Added: New Google Fonts
+- Added: New Titlebar Layout
+- Added: Sidenav Template supports now Widgets
+- Added: Sidenav Widget
+- Added: Add Multiple Google Maps on one page
+- Added: Xing & Instagram icon
+- Added: Sitemap Template
+- Added: Member Shortcode now linkable
+- Added: Teaser Shortcode now linkable
+- Fixed: Button Shortcode lightbox fix
+- Fixed: Google Text Shortcode with subset
+- Fixed: missing Slug in translation files
+- Fixed: Gallery Captions
+
+=== Changelog ===
+admin/assets/css/admin-style.css
+admin/assets/classes/class.options_machine.php
+admin/functions/functions.options.php
+footer.php
+framework/css/basic.css
+framework/css/responsive.css
+framework/css/retina.css
+framework/css/shortcodes.css
+framework/inc/customcss.php
+framework/inc/cusomjs.php
+framework/inc/enqueue.php
+framework/inc/googlefonts.php
+framework/inc/meta-boxes.php
+framework/inc/shortcodes.php
+framework/inc/tinymce/tinymce.js
+framework/inc/titlebar.php
+framework/js/isotope.js
+framework/js/prettyPhoto.js
+functions.php
+header.php
+index.php
+page-side-navigation.php
+page.php
+style.css
+
+------------------------------------------------------------------------
+# Version 1.0.7 - February 13th 2013
+------------------------------------------------------------------------
+- Fixed: Search Security Fix
+
+------------------------------------------------------------------------
+# Version 1.0.6 - February 5th 2013
+------------------------------------------------------------------------
+- Included: New Revolution Slider 2.2.4
+
+------------------------------------------------------------------------
+# Version 1.0.5 - February 2nd, 2013
+------------------------------------------------------------------------
+pardpardeftab720
+- Added: Improved Lightbox Options
+- Added: New Lightbox Version jQuery 1.9 Compatible
+- Added: Footer Columns Choosable
+- Added: Infobar Columns Choosable
+- Fixed: Comments Syntax
+- Fixed: Meta Viewport
+
+=== Changelog ===
+pardpardeftab720
+admin/functions/functions.options.php
+comments.php
+functions.php
+header.php
+framework/css/skeleton.css
+framework/inc/customjs.php
+framework/js/prettyPhoto.js
+
+=== Removed ===
+framework/inc/sidebars.php
+
+------------------------------------------------------------------------
+# Version 1.0.4 - January 30th, 2013
+------------------------------------------------------------------------
+- Added: Option to disable Breadcrumbs on Blog
+- Added: Option to reduce Opacity for Titlebar Image Grid
+- Added: Option to disable / enable zooming on Mobile Devices
+- Added: Comments in Portfolio Items possible
+- Includes: New version of Meta-Box Script
+- Includes: New version of Revolution Slider Plugin
+- Fixed: Sidenav Color to Accent Color
+- Fixed: Form Submit jQuery
+- Fixed: iPad Logo squeeze on bigger Logos
+- Fixed: Use standard Logo if no Retina Logo is available
+- Fixed: Styled Lists in Text Widget
+
+=== Changelog ===
+pardpardeftab720
+admin/functions/functions.options.php
+framework/css/shortcodes.css
+framework/css/retina.css
+framework/inc/cpt-portfolio.php
+framework/inc/customcss.php
+framework/js/functions.js
+header.php
+index.php
+single.php
+style.css line 821
+framework/inc/revslider.zip
+framework/inc/meta-box/ complete folder
+
+------------------------------------------------------------------------
+# Version 1.0.3 - January 25th, 2013
+------------------------------------------------------------------------
+- Added: Boxed Version with Margin
+- Added: Pull Latest News from Category
+- Added: Iconbox with own Icon URL
+- Added: Medium Blog as Default Blog
+- Added: Titlebar Image at Blog possible
+- Fixed: Slider in Blog Archiv
+- Fixed: Comment Avatars
+- Fixed: Back-To-Top z-index in Portfolio
+- Fixed: Portfolio Images
+- Some minor bug fixes
+
+=== Changelog ===
+pardpardeftab720
+functions.php
+header.php
+footer.php
+index.php
+archive.php
+comments.php
+framework/inc/shortcodes.php
+framework/inc/tinymce/tinymce.js
+framework/inc/customcss.php
+framework/inc/meta-boxes.php
+framework/inc/post-format/content-link.php
+framework/inc/post-format/content-quote.php
+framework/inc/enqueue.php
+framework/css/shortcodes.css
+admin/classes/class.options_machine.php
+admin/functions/functions.options.php
+
+------------------------------------------------------------------------
+# Version 1.0.2 - January 22th, 2013
+------------------------------------------------------------------------
+- Fixed GoogleFonts
+
+=== Changelog ===
+pardpardeftab720
+header.php
+
+------------------------------------------------------------------------
+# Version 1.0.1 - January 21st, 2013
+------------------------------------------------------------------------
+- Fixed Portfolio Shortcode
+- Added new Twitter Icon
+- Added some Slugs to Translation files
+- Option to deactivate Lightbox on Mobile Devices
+- Fixed a wrong Video in the Documentation
+
+=== Changelog ===
+pardpardeftab720
+framework/shortcodes.php
+images/icons/twitter.png
+functions.php
+framework/languages/en_EN.po
+framework/languages/en_EN.mo
+framework/languages/de_DE.po
+framework/languages/de_DE.mo
+functions/inc/customjs.php
+admin/functions/functions.options.php
+
+------------------------------------------------------------------------
