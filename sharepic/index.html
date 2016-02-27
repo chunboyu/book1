@@ -28,6 +28,7 @@
 		width: 100%;
 		margin-bottom: 10px;
 	}
+	
 	textarea {
 		width: 100%;height: 100px;
 	}
@@ -54,19 +55,31 @@
 	}
 	
 	.deerface{
-		display: block;
+		display:none;
+		width: 100%;
+		height: 100%;
+	    box-sizing: border-box;
+		margin-top: 60px;
+	 
+	    background: url(img/33bg.png) no-repeat;
+	    background-size: 100% 100%;
+	  
+	    word-break:break-all;
+	    word-wrap:break-word;
+	   
+		
 	}
 	.job > span{
-		font-size:20pt;color: #898989;width:2%;margin: 3px 3px;;
+		font-size:20pt;
 	}
 	.job > p{
-		font-size:20pt;color: #898989;display: inline-block;
+		font-size:20pt;color: #898989;
 	}
 	.job{
-		margin-top: 60px ;width: 100%;
+		margin-top: 15px ;width: 100%;
 	}
 	.name2{
-		margin-top: 25px; 
+		margin-top: 20px; 
 	}
 	.name2 > p{
 		font-size:36pt;font-weight:bold;color: #666666;
@@ -85,18 +98,18 @@
 		width: 100%;
 		line-height:1.5;
 	    box-sizing: border-box;
-	    margin-top: 15%;
-	    padding: 15% 8% 30px 8%;
+	    margin-top: 10%;
+	    padding: 15% 8% 60px 8%;
 	    font-size: 13pt;
 	    color: #797979;
 	    font-family: '微软雅黑';
 	    letter-spacing: 1px;
 	    background: url(img/33wenbenkuang.png) no-repeat;
 	    background-size: 100% 100%;
-	    min-height: 220px;
+	    min-height: 180px;
 	    word-break:break-all;
 	    word-wrap:break-word;
-	    text-indent: 2em;
+	    text-indent: 1.5em;
 	}
 	.shibie{
 		margin-top: 4.5%;float:right;width: 6%;
@@ -135,7 +148,7 @@
 		<li >
 			<a type="button" style="font-size: 12px;padding-left: 0;padding-right: 0;" class="btn btn-default" id="button1"  >确认生成图片</a>
 			<a type="button" style="font-size: 12px;padding-left: 0;padding-right: 0;" class="btn btn-default" id="down_button" >保存图片</a>
-			<a type="button" style="font-size: 12px;padding-left: 0;padding-right: 0;" class="btn btn-default" id="share_button" >发送到朋友圈</a>
+			<!--<a type="button" style="font-size: 12px;padding-left: 0;padding-right: 0;" class="btn btn-default" id="share_button" >发送到朋友圈</a>-->
 		</li>
 		<li class="logo">
 			<img src="img/logo.png"/>
@@ -146,20 +159,16 @@
 		
 		<li class="job">
 			
-				<p id="job1" style="text-align: right;width:47%;">
-				北京听力协
+				<p id="job1" style="text-align: center;">
+				
 			</p>
-			<span style="color:#fee11d;font-weight: bold;">
-				·
-			</span>
-			<p id="job2" style="text-align: left;">前端</p>
 			
-			
+			<p id="job2" style="text-align: center;margin-top:15px ;"></p>
 		</li>
 		<li class="name2">
 			<p align="center">
 			<span style="color:#1c7941;margin-right: 10px;">-</span>
-			<span class="name3" style="color: #595757;">大宁</span>
+			<span class="name3" style="color: #595757;"></span>
 			<span style="color:#fd8f01 ;margin-left: 10px;">-</span>
 			</p>
 			
