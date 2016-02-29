@@ -1,4 +1,4 @@
-/*
+﻿/*
 send form data via ajax and return the data to callback function 
 */
 function send_form( name , func )
@@ -103,9 +103,9 @@ function print(link)
 	{
   		onrendered: function(canvas) 
   		{
-    		//document.body.appendChild(canvas);
+    		document.body.appendChild(canvas);
     		$('#down_button').attr( 'href' , canvas.toDataURL() ) ;
-			$('#down_button').attr( 'download' , 'myjobdeer.png' ) ;
+		$('#down_button').attr( 'download' , 'myjobdeer.png' ) ;
     		$('#down_button').css('display','inline-block');
 
     		$('#share_button').css('display','inline-block');
