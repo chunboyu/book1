@@ -2923,7 +2923,7 @@ table {
 	}
 	.book .book-body .body-inner {
 		position: static;
-		min-height: calc(100% - 50px)
+		min-height: 85%
 	}
 }
 
