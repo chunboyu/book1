@@ -13546,8 +13546,8 @@ img.ui.bordered.image {
 	}
 	.ui.items>.item>.image {
 		display: block;
-		margin-left: auto;
-		margin-right: auto
+		margin-left: 28%;
+		margin-right: 28%;
 	}
 	.ui.items>.item>.image,
 	.ui.items>.item>.image>img {
