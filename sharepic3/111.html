@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>Cross-Browser QRCode generator for Javascript</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="qrcode.js"></script>
+	</head>
+
+	<body>
+		
+<ul class="list-side">
+
+　　<li><a target="a.html" >about</a></li>
+
+　　<li><a target="b.html" >news</a></li>
+
+　　<li><a target="c.html" >product</a></li>
+
+　　<li><a href="http://www.baidu.com/" target="_blank" >contact</a></li>
+
+</ul>
+
+ 
+
+<div id="iframe">
+
+　　<!--jquery 插入html 位址-->
+
+</div>
+		<!--
+        	<div style="position: absolute;top: 500px;">
+			<iframe id="frm_baidu" width="800" height="300" />
+		</div>
+        -->
+
+		<script type="text/javascript">
+			
+$(document).ready(function(){ 
+
+　　$.get("a.html",function(data){ //初始將a.html include div#iframe
+
+　　　　$("#iframe").html(data);
+
+　　}); 
+
+$(function(){
+
+　　$('.list-side li').click(function() {
+
+  　　// 找出 li 中的超链接 href(#id)
+
+ 　　　　var $this = $(this),
+
+ 　　　　_clickTab = $this.find('a').attr('target'); // 找到链接a中的targer的值
+
+ 　　　　$.get(_clickTab,function(data){
+
+ 　　　　　　$("#iframe").html(data); 
+
+ 　　　　});
+
+　　});
+
+});
+			});
+						var qrcode = new QRCode(document.getElementById("qrcode"), {
+							width: 200,
+							height: 200
+						});
+
+//						function show_baidu()
+//						{
+//							alert('1');
+//							var cc = document.getElementById("text").value;
+//							document.getElementById("frm_baidu").setAttribute("src", cc);
+//						}
+
+						function makeCode() {
+							var elText = document.getElementById("text");
+							if (!elText.value) {
+								alert("请输入网址");
+								elText.focus();
+								return;
+							}
+							qrcode.makeCode(elText.value);
+						}
+						$("#text").
+						on("keydown", function(e) {
+							if (e.keyCode == 13) {
+								makeCode();
+//								show_baidu();
+							}
+						});
+						$("#shengcheng").
+						on("click", function() {
+							alert('2');
+							makeCode();
+//							show_baidu();
+						});
+		</script>
+	</body>
+
+</html>
