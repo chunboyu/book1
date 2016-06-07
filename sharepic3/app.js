@@ -103,10 +103,10 @@ function print(link)
 	{   
   		onrendered: function(canvas) 
   		{
-    		//document.body.appendChild(canvas);
+    		document.body.appendChild(canvas);
     		$('#down_button').attr( 'href' , canvas.toDataURL() ) ;
-			alert(canvas.toDataURL());
-  		$('#down_button').attr( 'download' , 'myjobdeer.jpg' ) ;
+			
+  		$('#down_button').attr( 'download' , 'myjobdeer.png' ) ;
     		$('#down_button').css('display','inline-block');
 
     		$('#share_button').css('display','inline-block');
