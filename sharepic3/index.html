@@ -4,18 +4,39 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="qrcode.js"></script>
     <style type="text/css">
+    .text1{
+    	width:80%;display: block;margin-left: 8%;height: 30px;
+    }
     textarea{
-    	margin-top: 15px;
+    	margin: 15px 0 0 8%;float: left;width: 70%;height: 60px;font-size: 14px;padding: 5px 0 0 5px;
     	}
+   
     	.button1,#down_button{
-    		    margin:15px 0 0 10px;
-    position: relative;
-    width: 50px;
+    margin:25px 0 0 1%;
+   position: relative;
+   display: inline-block;
+    width: 4.5%;	
     height: 50px;
+    align-items: flex-start;
+    text-align: center;
+    
+    color: buttontext;
+  text-decoration: none;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 12px 5px ;
+    border-width: 2px;
+    border-style: outset;
+    top: 1px;
+    border-color: buttonface;
+    font-size: 14px;
+    	}
+    	#down_button{
+    		margin-left: 0px;
     	}
     	#theface{
-    		margin-top:15px;
-    		
+    		margin-top:25px;
+    		margin-left: 8%;
     	}
     	/*#sharepic > div{
     		height:200px;float:left; display:inline;
@@ -31,6 +52,8 @@
     	display: table-cell;
       vertical-align: middle;
       font-size: 25pt;
+      padding: 0 5%;
+      font-family: "arial black";
 }
 			#qrcode{
 				display: inline-block;
@@ -44,11 +67,11 @@ height: auto;
     </style>
   </head>
   <body>
-    <input type="text" value="" placeholder="请输入网址全称（例如http://www.deafchina.com）" style="width:70%;display: block;" />
+    <input class="text1" type="text" value="" placeholder="请输入网址全称（例如http://www.deafchina.com）" />
     
-   	<textarea name="" rows="3" cols="90%" placeholder="请输入描述二维码的文字（可以不输入）" style="float: left;"></textarea>
-    <input class="button1" type="button" value="确定"/>
-    <input type="button"  class="btn btn-default" id="down_button" value="保存图片"/>
+   	<textarea name="" rows="3" cols="90%" placeholder="请输入描述二维码的文字（可以不输入）" ></textarea>
+    <a class="button1" type="button" value="确定">确定</a>
+    <a type="button"  class="btn btn-default" id="down_button" >保存</a>
     <div id="theface" >
     	<div id="showtitle" ><div id="showname"></div></div>
     	<div id="qrcode" ></div>
