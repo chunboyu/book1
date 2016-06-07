@@ -105,7 +105,7 @@ function print(link)
   		{
     		//document.body.appendChild(canvas);
     		$('#down_button').attr( 'href' , canvas.toDataURL() ) ;
-			alert($('#down_button').href);
+			alert(canvas.toDataURL());
   		$('#down_button').attr( 'download' , 'myjobdeer.jpg' ) ;
     		$('#down_button').css('display','inline-block');
 
