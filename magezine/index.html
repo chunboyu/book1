@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=1.0)">  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+    <title>magzine</title>
+    <style type="text/css">
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+		body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+		td,th,caption { font-size:14px; }
+		h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+		address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+		a { text-decoration:none; }
+		a:hover { text-decoration:underline; }
+		img { border:none; }
+		ol,ul,li { list-style:none; }
+		input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+		table { border-collapse:collapse; }
+		html {overflow-y: scroll;} 
+		/* css common */
+		.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+		.clearfix { *zoom:1; }
+		html,body{height:auto;}
+		
+		.viewport{    
+		width: 100%;    
+		height: 100%;    
+		display: -webkit-box;    
+		 
+		/*pointer-events: none;   */ 
+		   
+		   
+		} 
+		 .pageview{
+		 	width:100%;
+		 }
+		 #page1{
+		 	position:absolute;height: 100%;}
+		 #page2{
+		 	position:relative;left:50%;display: none;
+		 	animation: mytwo 30s infinite  alternate;
+		 	-moz-animation: mytwo 30s infinite  alternate;
+		 	-webkit-animation: mytwo 30s infinite  alternate;
+		 }
+		.donghua{
+			animation:myfirst 1s forwards;
+			-moz-animation:myfirst 1s forwards; /* Firefox */
+			-webkit-animation:myfirst 1s forwards; /* Safari and Chrome */
+			}
+		@keyframes myfirst
+		{
+		from {ms-transform:translate3d(0,0,0);   ; 	/* IE 9 */
+			-moz-transform:translate3d(0,0,0);   ; 	/* Firefox */
+			-webkit-transform:translate3d(0,0,0);   ; /* Safari 和 Chrome */}
+		to {ms-transform:translate3d(-50%,0,0);   ; 	/* IE 9 */
+			-moz-transform:translate3d(-50%,0,0);   ; 	/* Firefox */
+			-webkit-transform:translate3d(-50%,0,0);   ; /* Safari 和 Chrome */}
+		}
+		@keyframes mytwo
+		{
+			0%   {background:#f6f5f3;}
+			20%  {background:#b3c6d4;}
+			
+			50% {background:#dddbdc;}
+			80% {background:#c5c1c2;}
+			100%{background:#f6f5f3;}
+		}
+		@-moz-keyframes mytwo
+		{
+			0%   {background:#f6f5f3;}
+			20%  {background:#b3c6d4;}
+			
+			50% {background:#dddbdc;}
+			80% {background:#c5c1c2;}
+			100%{background:#f6f5f3;}
+		}
+		@-webkit-keyframes mytwo
+		{
+			0%   {background:#f6f5f3;}
+			20%  {background:#b3c6d4;}
+			
+			50% {background:#dddbdc;}
+			80% {background:#c5c1c2;}
+			100%{background:#f6f5f3;}
+		}
+		.slcd{z-index: 999999; width:92px; height:92px;position:fixed; bottom:15px;}
+		.btn1{height: 92px;background-color:rgba(0,0,0,0.2);font-size: 16px; color:white;width:100%; list-style-type:none; line-height:92px; text-align:center; }
+		.caidan{background-color:rgba(0,0,0,0.2);font-size: 16px;}
+		.zcd ul,.zcd ul li{ width:100%; height:92px;margin-bottom: 5px; }
+		.zcd ul li a{text-decoration:none;color: white;}
+		.zcd{display: none;}
+		.show { width:184px;}
+		.show2{ display: block;}
+		.show3 {background-color:rgba(62,59,59,0.8);}
+		
+		.zcd{ margin-top:-388px; width:100%;}/*每个子菜单的上边距需要手动调整*/
+		.jiahao{
+			font-size: 30px;font-weight: 600;
+		}
+		
+    </style>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+   
+</head>
+<body >
+	<div id="slcd" class="slcd">
+		<ul>
+   		<li id="btn1" class="btn1" onclick="showbutton()"><span class="jiahao">+</span>
+        	<div id="zcd" class="zcd">
+            	<ul>
+                    <li class="caidan"><a href="#">菜单1子菜单1</a></li>
+                    <li class="caidan"><a href="#">菜单1子菜单2</a></li>
+                    <li class="caidan"><a class="showpage" href="#" onclick="changewidth()"><span class="jiahao2">Contents</span></a></li>
+                </ul>
+            </div>
+        </li>
+        </ul>
+</div>
+    <div id="viewport" class="viewport ">    
+		<div id="page1" class="pageview" style="background: #3b76c0" >  
+		<!--<video width="100%" height="100%">
+			<source src="img/myvideo.mp4" type="video/mp4"></source>
+			
+			<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+				<param name="movie" value="myvideo.swf" />
+				<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+			</object>
+		</video>-->
+		
+		
+		<!-- <input type="button" id="btn2" onclick="changewidth()" value="123" />   -->
+		</div>    
+		<div id="page2" class="pageview" style="background: red;">  
+			
+		<h3>页面-2</h3>
+		<h3>页面-2</h3>
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> <h3>页面-2</h3> 
+		<h3>页面-2</h3>
+		<h3>页面-2</h3>
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> <h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> <h3>页面-2</h3> 
+		<h3>页面-2</h3>
+		<h3>页面-2</h3>
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-2</h3> 
+		<h3>页面-3</h3> 
+		<h3>页面-4</h3> 
+		<h3>页面-5</h3> 
+		<h3>页面-6</h3> <h3>页面-2</h3> 
+		</div>
+		
+		
+</div>    
+  <script type="text/javascript">
+		  function showbutton(){         //菜单颜色和大小转换
+		  	$("#slcd").toggleClass("show");
+		  	$(".caidan").toggleClass("show3");
+		  	$("#zcd").toggleClass("show2");
+		  	
+		  	if($(".jiahao").text() == "+"){
+		  		$(".jiahao").text("-");
+				$(".btn1").css("background-color","rgba(62,59,59,0.8)")
+		  	}else{
+		  		$(".jiahao").text("+");
+				$(".btn1").css("background-color","rgba(0,0,0,0.2)")
+		  	}
+		//	else if($(".jiahao2").text() == "Contents"){
+		//		$(".jiahao2").text("Cover");
+		//	}else{
+		//		$(".jiahao2").text("Contents");
+		//	}
+		//	function(){
+		// $("#slcd").css({"width":"20%","background-color":"rgba(0,0,0,0.2)"});
+		//	$("#zcd").show();},
+		//  function(){
+		//$("#slcd").css({"width":"10%","background-color":"rgba(0,0,0,0.2)"});
+		//	$("#zcd").hide();});
+		  	
+		  }
+		  function changewidth() {
+		        		
+		     		$(".viewport").css("width","200%");
+		     		$(".pageview").css("width","50%");
+		     		$("#page2").show();
+		     		$(".viewport").addClass("donghua");
+		
+					if($(".jiahao2").text() == "Contents"){
+							$(".jiahao2").text("Cover");
+							
+						}else{
+							$(".jiahao2").text("Contents");
+							$(".showpage").attr("href","index.html");
+						}
+			}
+		  
+          $(function() {
+        	
+            var startX, startY, endX, endY;
+            var showADID = 1;
+            document.getElementById("divADBox").addEventListener("touchstart", touchStart, false);
+            document.getElementById("divADBox").addEventListener("touchmove", touchMove, false);
+            document.getElementById("divADBox").addEventListener("touchend", touchEnd, false);
+            function touchStart(event) {
+                var touch = event.touches[0];
+                startY = touch.pageY;
+                startX = touch.pageX;
+            }
+            function touchMove(event) {
+                var touch = event.touches[0];
+                endX = touch.pageX;
+            }
+            function touchEnd(event) {
+			if((startX -endX)>20){
+				changewidth();
+//				$("#img0" + showADID).hide();
+//              
+//                  $("#img0" + showADID).show();
+//              $("#spText").html("X轴移动大小：" + (startX - endX));}
+               
+            }
+        })
+    </script>
+</body>
+</html>
