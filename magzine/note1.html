@@ -52,12 +52,11 @@
 			}
 			/*主页面内容*/
 			.main-note{height: 100%;}
-			#note1-1{background: url(img/note-3.gif) no-repeat;z-index: -999;
+			#note1-1{
 				margin-top:0px;
 				 margin-right:0px;
 				 margin-bottom:0px;
-				 margin-left:0px;background-position:center;background-size: 100% 100%;
-				 
+				 margin-left:0px;
 				     height: 100%;
    			}
 			
@@ -242,7 +241,7 @@
 						<div class="mag1" >
 							<p class="p1" >IAA</p><p class="p1">&nbsp;&nbsp;2014</p>
 							<div id="">
-								<a href="#"><img  src="img/drive1.gif"/></a>
+								<a href="#"><img  class="drive1" data-original="img/drive1.gif"/></a>
 							</div>
 							<div class="technoloy">
 								<p>TECHNOLOGY</p>
@@ -265,7 +264,7 @@
 								<p class="p2">PADDLES</p>
 							</div>
 							<div id="mag1-a-1">
-								<a href="#"><img  src="img/img2.jpg"/></a>
+								<a href="#"><img  class="lazy" data-original="img/img2.jpg"/></a>
 							</div>
 							<div class="technoloy">
 								<p>TECHNOLOGY</p>
@@ -286,7 +285,7 @@
 								<p class="p2">ZF IS ALREADY</p>
 								<p class="p2" style="margin-left: 60px;">THERE</p>
 							</div>
-							<a href="#"><img  src="img/img3.jpg"/></a>
+							<a href="#"><img  class="lazy" data-original="img/img3.jpg"/></a>
 							<div class="technoloy">
 								<p>GLOBALIZATION</p>
 							</div>
@@ -303,7 +302,7 @@
 								<p class="p2">ABOUT TECH</p>
 							</div>
 							<div id="">
-								<a href="#"><img  src="img/img4.jpg"/></a>
+								<a href="#"><img  class="lazy" data-original="img/img4.jpg"/></a>
 							</div>
 							<div class="technoloy" style="right: -85px;">
 								<p>CORPORATE</p>
@@ -339,6 +338,7 @@
 					
 					
 						<div id="note1-1">
+							<img style="width: 100%;position: absolute;" class="note-3" data-original="img/note-3.gif"/>
 										<div class="logo1-div1" style="display: none;">
 										<p>IAA</p>
 										</div>
@@ -371,8 +371,8 @@
 					<div class="mag3">
 						<div class="div-img">
 								<img src="img/img2.jpg"/>
-								<img  src="img/img3.jpg"/>
-								<img id="mag3-img3" class="old" src="img/img4.jpg"/>
+								<img src="img/img3.jpg"/>
+								<img id="mag3-img3" class="old" data-original="img/logo1.gif"/>
 							</div>
 					</div>
 					
@@ -449,23 +449,32 @@
 		</div>
 		<script src="js/mui.min.js"></script>
 		<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
-  
+  		<script src="js/jquery.lazyload.js"></script>
 		<script>
 			   $(function() {
+			   	 $("img.lazy").lazyload({effect: "fadeIn",placeholder : "img/img2.jpg",});
+				$("img.drive1").lazyload({effect: "show",placeholder : "img/drive1-0.gif",});
+				$("img.note-3").lazyload({effect: "show",placeholder : "img/note-3-0.gif",});
+				$("img.old").lazyload({effect: "show",placeholder : "img/logo1-0.gif",threshold: 200,});
+				
 			   	$("#note1-1").css("height",$(window).height())    //给第一个动图100%高度
+			   	$("#note1-1 > .note-3").css("height",$(window).height())    //给第一个动图100%高度
 			   	
-			   	setTimeout(function(){$(".logo1-div1").css("display","block")},2500);
-			   	setTimeout(function(){$(".logo1-div2").css("display","block")},3000);
-			   	setTimeout(function(){$(".logo1-div3").css("display","block")},2500);
+			   	$("#note1-1 > .note-3").load(function(){
+			   			setTimeout(function(){$(".logo1-div1").css("display","block")},2500);
+			   			setTimeout(function(){$(".logo1-div2").css("display","block")},3000);
+			   			setTimeout(function(){$(".logo1-div3").css("display","block")},2500);
 			   	
-			   	$("#logo1").on("drag",function(){
-			   		if($("#mag3-img3").attr("class") == "old" ){
-			   			
-					if($("#mag3-img3").offset().top < 500){
-						$("#mag3-img3").attr("class","new")
-						$("#mag3-img3").attr("src","img/logo1.gif")
-					}}
-			   })
+			   	})
+			   
+//			   	$("#logo1").on("drag",function(){
+//			   		if($("#mag3-img3").attr("class") == "old" ){
+//			   			
+//					if($("#mag3-img3").offset().top < 500){
+//						$("#mag3-img3").attr("class","new")
+//						$("#mag3-img3").attr("src","img/logo1.gif")
+//					}}
+//			   })
 			   	$("#offCanvasShow").click(function(){
 
 					if($(".jiahao2").text() == "Contents"){
